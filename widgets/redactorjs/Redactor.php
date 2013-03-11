@@ -62,7 +62,7 @@ class Redactor extends CInputWidget {
             $this->htmlOptions['style'] = "width:{$this->width};height:{$this->height};";
         }
 
-		$options = CJSON::encode(array_merge($this->editorOptions, array('lang' => $this->lang, 'toolbar' => $this->toolbar)));
+		$options = CJSON::encode(array_merge($this->editorOptions, array('path' => $assets ,'lang' => $this->lang, 'toolbar' => $this->toolbar)));
 
 		        $js =<<<EOP
 		$('#{$id}').redactor({$options});
