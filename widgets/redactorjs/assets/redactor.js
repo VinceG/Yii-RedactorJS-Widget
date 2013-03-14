@@ -43,7 +43,7 @@ var RTOOLBAR = {};
 		
 			path: false,
 			css: 'style.css',
-			focus: true,
+			focus: false,
 			resize: true,
 			autoresize: false,
 			fixed: false,
